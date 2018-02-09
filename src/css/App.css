@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; }
+
+.App {
+  text-align: center;
+  width: 100%; }
+  .App .main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #393939; }
+    .App .main .headshot {
+      width: 45%; }
+    .App .main .name {
+      margin-top: 25px;
+      font-size: 1.8rem;
+      color: #EFEDF0; }
+    .App .main .title {
+      margin-top: 15px;
+      font-size: 1rem;
+      font-weight: 100;
+      color: #6EAD44;
+      letter-spacing: 2px; }
+  .App .about {
+    padding: 25px 25px;
+    background: #EFEDF0;
+    font-size: 1.2rem;
+    line-height: 1.6rem; }
+    .App .about h1 {
+      margin: 25px auto;
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #4E4A49; }
+    .App .about p {
+      text-align: left;
+      color: #222023; }
+      .App .about p em {
+        color: #6EAD44; }
+  .App .portfolio {
+    background: #CECCCF;
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    .App .portfolio h1 {
+      margin: 25px auto;
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 10px;
+      color: #4E4A49; }
+    .App .portfolio .project-info {
+      margin-top: 25px;
+      margin-bottom: 25px; }
+      .App .portfolio .project-info .project-name {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #222023; }
+        .App .portfolio .project-info .project-name .first-letter {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: #6EAD44; }
+      .App .portfolio .project-info .project-image-container .project-image {
+        width: 80%; }
+      .App .portfolio .project-info .project-image-container:hover {
+        cursor: pointer; }
+  .App .footer {
+    background: #393939;
+    color: #6EAD44; }
+    .App .footer ul {
+      text-align: left;
+      padding: 25px 10px; }
+      .App .footer ul li {
+        margin: 0 5px; }
+        .App .footer ul li a {
+          color: #6EAD44;
+          text-decoration: none; }
+          .App .footer ul li a:hover {
+            color: #EFEDF0;
+            cursor: pointer; }
+
+.modal-container .modal-image {
+  width: 100%; }
+
+.modal-container .links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+  .modal-container .links a {
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    height: 50px;
+    padding-top: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #393939;
+    text-decoration: none;
+    color: #6EAD44;
+    font-size: 1.1rem; }
+    .modal-container .links a:hover {
+      color: #EFEDF0; }
+
+.modal-container h1 {
+  margin-bottom: 15px;
+  color: #393939;
+  font-size: 1.4rem;
+  text-shadow: -1px 0 #EFEDF0, 0 1px #EFEDF0, 1px 0 #EFEDF0, 0 -1px #EFEDF0; }
+
+.modal-container .description {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
+  color: #393939;
+  font-size: 1.2rem;
+  line-height: 1.6rem; }
+
+.modal-container .close-button {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 75px;
+  height: 45px;
+  background: #6EAD44;
+  color: #393939;
+  font-size: 1.1rem;
+  font-weight: 700; }
+  .modal-container .close-button:hover {
+    color: #EFEDF0;
+    cursor: pointer; }
+
+@media screen and (min-width: 500px) {
+  .App .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 10%; }
+    .App .main .headshot {
+      width: 200px; }
+    .App .main .main-container {
+      width: 50%;
+      text-align: right;
+      align-self: flex-start; }
+  .App .about {
+    padding-left: 10%;
+    padding-right: 10%; }
+    .App .about h1 {
+      margin: 30px auto;
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 10px; }
+    .App .about p {
+      font-size: 1.4rem;
+      margin: 30px auto; }
+  .App .portfolio {
+    padding-left: 10%;
+    padding-right: 10%; }
+    .App .portfolio .projects-container {
+      display: flex;
+      flex-wrap: wrap; }
+      .App .portfolio .projects-container .project-info {
+        margin: 50px auto;
+        width: 50%; }
+        .App .portfolio .projects-container .project-info h2 {
+          font-size: 1.4rem; }
+        .App .portfolio .projects-container .project-info .project-image-container {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+  .App .footer ul li {
+    display: inline; } }
+
+@media screen and (min-width: 900px) {
+  .App .main {
+    padding: 75px 10%; }
+  .App .about {
+    padding-righ: 10%;
+    padding-left: 10%; }
+  .App .portfolio {
+    padding-right: 10%;
+    padding-left: 10%; }
+    .App .portfolio .projects-container {
+      display: flex;
+      flex-wrap: wrap; }
+      .App .portfolio .projects-container .project-info {
+        width: 30%; }
+  .modal-container {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    .modal-container .close-button {
+      position: fixed;
+      right: 70px;
+      bottom: 50px; } }
