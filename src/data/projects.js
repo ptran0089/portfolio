@@ -18,14 +18,14 @@ const projectsData = [
 		imgSrc: simonGame,
 		url: 'https://ptran0089.github.io/Simon-Game/',
 		github: 'https://github.com/ptran0089/Simon-Game',
-		description: 'A Simon Says game created with vanilla javascript.'
+		description: 'A Simon Says game created with vanilla javascript. Strict mode resets the game to level 1 if the player makes a mistake.'
 	},
 	{
 		name: 'Twitch Viewer',
 		imgSrc: twitchStreams,
 		url: 'https://ptran0089.github.io/Twitch-Viewer/',
 		github: 'https://github.com/ptran0089/Twitch-Viewer',
-		description: 'Keep track of your twitch streams. Add your favorites streams to list and see if the stream is online or offline. User can display all of the streams, only online streams, or only offline streams. Built with HTML, CSS, and jQuery.'
+		description: 'Keep track of your favorite twitch streams. Add your twitch stream to the list to keep track of the stream\'s status. User can display all of the streams, online streams, or offline streams. Built with HTML, CSS, and jQuery.'
 	},
 	{
 		name: 'Real Estate App',
@@ -46,7 +46,7 @@ const projectsData = [
 		imgSrc: fccLeaderboard,
 		url: 'https://ptran0089.github.io/fcc-leaderboard/',
 		github: 'https://github.com/ptran0089/fcc-leaderboard',
-		description: 'A leaderboard for freecodecamp members, built with React. It can be sorted by all time leaders or most points earned in the last 30 days.'
+		description: 'A leaderboard for freecodecamp members, built with React. It can be sorted by all-time leaders or most points earned in the last 30 days.'
 	}
 ];
 
