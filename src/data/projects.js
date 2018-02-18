@@ -3,7 +3,8 @@ import realEstate from '../images/real-estate.jpg';
 import simonGame from '../images/simon-game.jpg';
 import twitchStreams from '../images/twitch-streams.jpg';
 import wikipediaSnippet from '../images/wikipedia-snippet.jpg';
-import fccLeaderboard from '../images/fcc-leaderboard.jpg'
+import fccLeaderboard from '../images/fcc-leaderboard.jpg';
+import downtownMap from '../images/downtown-map.jpg';
 
 const projectsData = [
 	{
@@ -47,6 +48,13 @@ const projectsData = [
 		url: 'https://ptran0089.github.io/fcc-leaderboard/',
 		github: 'https://github.com/ptran0089/fcc-leaderboard',
 		description: 'A leaderboard for freecodecamp members, built with React. It can be sorted by all-time leaders or most points earned in the last 30 days.'
+	},
+	{
+		name: 'Downtown Map',
+		imgSrc: downtownMap,
+		url: 'https://ptran0089.github.io/downtown-map/',
+		github: 'https://github.com/ptran0089/downtown-map',
+		description: 'A map of Sacramento with a couple of recommended hangout spots. The map shows a couple of exhibits including bars, food, and/or other activities. User can search for places by name or activity and find basic information such address and hours in the info window. Built with React, react-google-maps, recompose, and axios.'
 	}
 ];
 
