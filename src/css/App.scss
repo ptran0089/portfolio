@@ -10,118 +10,119 @@ body {
   box-sizing: border-box;
 }
 
-.App {
+.app {
   text-align: center;
   width: 100%;
+}
 
-  .main {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: $charcoal;
+.main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: $charcoal;
 
-    .headshot {
-      width: 45%;
-    }
-
-    .name {
-      margin-top: 25px;
-      font-size: 1.8rem;
-      color: $offwhite;
-    }
-
-    .title {
-      margin-top: 15px;
-      font-size: 1rem;
-      font-weight: 100;
-      color: $green;
-      letter-spacing: 2px;
-    }
+  .headshot {
+    width: 45%;
   }
 
-  .about {
-    padding: 25px 25px;
-    background: $offwhite;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+  .name {
+    margin-top: 25px;
+    font-size: 1.8rem;
+    color: $offwhite;
+  }
 
-    h1 {
-      margin: 25px auto;
-      font-size: 2.4rem;
-      font-weight: 600;
-      color: $darkgrey;
+  .title {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 100;
+    color: $green;
+    letter-spacing: 2px;
+  }
+}
+
+.about {
+  padding: 25px 25px;
+  background: $offwhite;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+
+  h1 {
+    margin: 25px auto;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: $darkgrey;
+  }
+
+  p {
+    text-align: left;
+    color: $black;
+
+    em {
+      color: $green;
     }
+  }
+}
 
-    p {
-      text-align: left;
+.portfolio {
+  background: $lightgrey;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  h1 {
+    margin: 25px auto;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 10px;
+    color: $darkgrey;
+  }
+
+  .project-info {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    .project-name {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
       color: $black;
 
-      em {
+      .first-letter {
+        font-size: 1.8rem;
+        font-weight: 700;
         color: $green;
       }
     }
-  }
 
-  .portfolio {
-    background: $lightgrey;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    .project-image-container {
 
-    h1 {
-      margin: 25px auto;
-      font-size: 2.4rem;
-      font-weight: 600;
-      letter-spacing: 10px;
-      color: $darkgrey;
-    }
-
-    .project-info {
-      margin-top: 25px;
-      margin-bottom: 25px;
-
-      .project-name {
-        margin-bottom: 10px;
-        font-size: 1.2rem;
-        color: $black;
-
-        .first-letter {
-          font-size: 1.8rem;
-          font-weight: 700;
-          color: $green;
-        }
+      .project-image {
+        width: 80%;
       }
 
-      .project-image-container {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
 
-        .project-image {
-          width: 80%;
-        }
+.footer {
+  background: $charcoal;
+  color: $green;
+
+  ul {
+    text-align: left;
+    padding: 25px 5%;
+
+    li {
+      margin: 0 5px 5px 5px;
+      vertical-align: center;
+
+      a {
+        color: $green;
+        text-decoration: none;
 
         &:hover {
+          color: $offwhite;
           cursor: pointer;
-        }
-      }
-    }
-  }
-
-  .footer {
-    background: $charcoal;
-    color: $green;
-
-    ul {
-      text-align: left;
-      padding: 25px 10px;
-
-      li {
-        margin: 0 5px;
-
-        a {
-          color: $green;
-          text-decoration: none;
-
-          &:hover {
-            color: $offwhite;
-            cursor: pointer;
-          }
         }
       }
     }
@@ -141,7 +142,7 @@ body {
     a {
       display: inline-block;
       text-align: center;
-      width: 45%;
+      width: 30%;
       height: 50px;
       padding-top: 15px;
       margin-top: 15px;
@@ -153,6 +154,7 @@ body {
 
       &:hover {
         color: $offwhite;
+        cursor: pointer;
       }
     }
   }
@@ -172,134 +174,33 @@ body {
     font-size: 1.2rem;
     line-height: 1.6rem;
   }
-
-  .close-button {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 75px;
-    height: 45px;
-    background: $green;
-    color: $charcoal;
-    font-size: 1.1rem;
-    font-weight: 700;
-
-    &:hover {
-      color: $offwhite;
-      cursor: pointer;
-    }
-  }
 }
 
-@media screen and (min-width: 500px) {
-  .App {
-    .main {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 75px 10%;
+.about > .skills {
+  text-align: left;
 
-      .headshot {
-        width: 200px;
-      }
-
-      .main-container {
-        width: 50%;
-        text-align: right;
-        align-self: flex-start;
-      }
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+  svg {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  
+    &.react {
+      fill: #037DD6;
     }
-
-    .about {
-      padding-left: 10%;
-      padding-right: 10%;
-
-      h1 {
-        margin: 30px auto;
-        font-size: 2.4rem;
-        font-weight: 600;
-        letter-spacing: 10px;
-      }
-
-      p {
-        font-size: 1.4rem;
-        margin: 30px auto;
-      }
-    }
-
-    .portfolio {
-      padding-left: 10%;
-      padding-right: 10%;
-
-      .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-
-        .project-info {
-          margin: 50px 0;
-          width: 50%;
-
-          h2 {
-            font-size: 1.4rem;;
-          }
-
-          .project-image-container {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-        }
-      }
-    }
-
-    .footer {
-      ul {
-        li {
-          display: inline;
-        }
-      }
+  
+    &.express {
+      width: 40px;
+      height: 40px;    
+      fill: #037DD6;
     }
   }
-}
-
-@media screen and (min-width: 900px) {
-  .App {
-    .main {
-      padding: 75px 10%;
-    }
-
-    .about {
-      padding-righ: 10%;
-      padding-left:10%;
-    }
-
-    .portfolio {
-      padding-right: 10%;
-      padding-left: 10%;
-
-      .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        .project-info {
-          width: 30%;
-        }
-      }
-    }
-  }
-
-  .modal-container {
-    width: 45%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-
-    .close-button {
-      position: fixed;
-      right: 70px;
-      bottom: 50px;
-    }
-  }
+  
+  .redux-logo {
+    display: inline-block;
+    height: 40px;
+  } 
 }

@@ -8,10 +8,10 @@ class Project extends Component {
 
 		return (
 			<div className="project-info">
-				<h2 className="project-name">
+				<p className="project-name">
 					<span className="first-letter">{firstLetter}</span>
 					{restOfName}
-				</h2>
+				</p>
 				<div className="project-image-container">
 					<img src={project.imgSrc} alt={project.name} className="project-image" onClick={() => handleOpenModal(project)}/>
 				</div>

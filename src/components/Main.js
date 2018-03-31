@@ -6,9 +6,9 @@ class Main extends Component {
 		return (
 			<div className="main">
 				<img className="headshot" alt="headshot" src={headshot} />
-				<div className="main-container">
+				<div className="details">
 					<p className="name">PHUONG TRAN</p>
-					<p className="title">FRONT-END WEB DEVELOPER</p>
+					<p className="title">WEB DEVELOPER</p>
 				</div>
 			</div>
 		);

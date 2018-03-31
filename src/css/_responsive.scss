@@ -1,0 +1,126 @@
+@media screen and (min-width: 500px) {
+  .app {
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 10%;
+
+      .headshot {
+        width: 125px;
+      }
+
+      .details {
+        width: 70%;
+        text-align: right;
+        align-self: flex-start;
+
+        .name {
+          font-size: 1.6rem;
+        }
+
+        .title {
+          font-size: .8rem;
+        }
+      }
+    }
+
+    .about {
+      padding: 10px 10%;
+
+      h1 {
+        margin: 10px auto;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 10px;
+      }
+
+      .skills > h1 {
+        font-size: 1.0rem;
+        letter-spacing: 0;
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 10px auto;
+      }
+    }
+
+    .portfolio {
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 150px;
+
+      h1 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 1.2rem;
+      }
+
+      .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+
+        .project-info {
+          margin: 20px 0;
+          width: 50%;
+
+          .project-name {
+            margin-bottom: 10px;
+            font-size: .8rem;
+            color: $black;
+      
+            .first-letter {
+              font-size: 1rem;
+              font-weight: 700;
+              color: $green;
+            }
+          }
+
+          .project-image-container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .footer {
+      font-size: .7rem;
+
+      ul {
+        padding: 15px;
+
+        li {
+          display: inline;
+        }
+      }
+    }
+
+    .languages {
+      margin-top: 10px;
+    }
+    
+    .technologies {
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .modal-container {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+  
+@media screen and (min-width: 700px) {
+  .app > .portfolio > .projects-container > .project-info {
+      width: 30%;
+  }
+}

@@ -12,16 +12,16 @@ class Modal extends Component {
 		const { isOpen, handleCloseModal, project } = this.props;
 		const style = {
 			overlay: {
-	      position: 'fixed',
-	      top: 0,
-	      left: 0,
-	      right: 0,
-	      bottom: 0,
-	      backgroundColor: 'rgba(0, 0, 0, 0.3)',
-	    },
-	    content: {
-	    	background: 'rgb(206, 204, 207)'
-	    }
+				position: 'fixed',
+				top: 0,
+				left: 0,
+				right: 0,
+				bottom: 0,
+				backgroundColor: 'rgba(0, 0, 0, 0.3)'
+			},
+			content: {
+				background: 'rgb(206, 204, 207)'
+			}
 		};
 
 		return (
@@ -30,10 +30,11 @@ class Modal extends Component {
 					<img src={project.imgSrc} alt={project.name} className="modal-image"/>
 					<div className="links">
 						<a href={project.github}>Github</a>
-						<a href={project.url}>View</a></div>
+						<a href={project.url}>View</a>
+						<a className="close-button" onClick={handleCloseModal}>Close</a>						
+					</div>
 					<h1>{project.name}</h1>
 					<p className="description">{project.description}
-					<button className="close-button" onClick={handleCloseModal}>Close</button>
 					</p>
 				</div>
 			</ReactModal>
