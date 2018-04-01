@@ -154,7 +154,7 @@ table {
       font-size: 1.0rem;
       letter-spacing: 0; }
     .app .about p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin: 10px auto; }
   .app .portfolio {
     padding-left: 10%;
@@ -174,10 +174,10 @@ table {
         width: 50%; }
         .app .portfolio .projects-container .project-info .project-name {
           margin-bottom: 10px;
-          font-size: 1.2rem;
+          font-size: 1.4rem;
           color: #222023; }
           .app .portfolio .projects-container .project-info .project-name .first-letter {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: #6EAD44; }
         .app .portfolio .projects-container .project-info .project-image-container {
