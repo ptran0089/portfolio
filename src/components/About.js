@@ -6,6 +6,7 @@ class About extends Component {
 		return (
 			<div className="about">
 				<h1>About</h1>
+				<br/>
 				<p> Hi, my name is Phuong. I am a graduate of UC Davis, where I majored in Physiology. I became interested in web development about eight months ago and have really enjoyed learning how to program. I am always 
 					looking to learn new things to improve my skills and knowledge. <br/>
 					<br/>
@@ -13,6 +14,7 @@ class About extends Component {
 					curiosity <em>>></em> tinkering <em>>> </em> roadblock <em>>> </em> 
 					cold shower <em>>></em> discovery <em>>> </em> eureka moment <em>>> </em> elation <em>>></em> &#x1F389;
 				</p>
+				<br/>
 				<hr />
 				<br/>	
 				<div className="skills">

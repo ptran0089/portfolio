@@ -132,22 +132,22 @@ table {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 10%; }
+    padding: 50px 10%; }
     .app .main .headshot {
-      width: 125px; }
+      width: 200px; }
     .app .main .details {
       width: 70%;
       text-align: right;
       align-self: flex-start; }
       .app .main .details .name {
-        font-size: 1.6rem; }
+        font-size: 2.0rem; }
       .app .main .details .title {
-        font-size: .8rem; }
+        font-size: 1.2rem; }
   .app .about {
-    padding: 10px 10%; }
+    padding: 20px 10%; }
     .app .about h1 {
       margin: 10px auto;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       font-weight: 600;
       letter-spacing: 10px; }
     .app .about .skills > h1 {
@@ -159,24 +159,25 @@ table {
   .app .portfolio {
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 20px;
     padding-bottom: 150px; }
     .app .portfolio h1 {
-      margin-top: 20px;
       margin-bottom: 40px;
-      font-size: 1.2rem; }
+      font-size: 1.6rem; }
     .app .portfolio .projects-container {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
       padding-bottom: 20px; }
       .app .portfolio .projects-container .project-info {
-        margin: 20px 0;
+        margin: 0 0 75px 0;
         width: 50%; }
         .app .portfolio .projects-container .project-info .project-name {
           margin-bottom: 10px;
-          font-size: .8rem;
+          font-size: 1.2rem;
           color: #222023; }
           .app .portfolio .projects-container .project-info .project-name .first-letter {
-            font-size: 1rem;
+            font-size: 1.4rem;
             font-weight: 700;
             color: #6EAD44; }
         .app .portfolio .projects-container .project-info .project-image-container {
@@ -185,9 +186,9 @@ table {
           justify-content: center;
           align-items: center; }
   .app .footer {
-    font-size: .7rem; }
+    font-size: 1rem; }
     .app .footer ul {
-      padding: 15px; }
+      padding: 25px; }
       .app .footer ul li {
         display: inline; }
   .app .languages {
@@ -332,15 +333,15 @@ body {
   .about > .skills h1 {
     font-size: 1.6rem; }
   .about > .skills svg {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin: 5px; }
     .about > .skills svg.react {
       fill: #037DD6; }
     .about > .skills svg.express {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       fill: #037DD6; }
   .about > .skills .redux-logo {
     display: inline-block;
-    height: 40px; }
+    height: 50px; }
